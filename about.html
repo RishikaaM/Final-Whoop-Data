@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WHOOP Data Insights - About</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #333;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    nav ul li a.active, nav ul li a:hover {
+      color: #ff7e5f;
+    }
+
+    header {
+      text-align: center;
+      margin: 40px 0;
+      color: white;
+    }
+
+    header h2 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    #about-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      text-align: center;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      color: white;
+    }
+
+    #complexSketch {
+      width: 100%;
+      height: 500px;
+      display: block;
+      margin: 50px auto;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="data.html">Data</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h2>About WHOOP Data Insights</h2>
+    <p>Get to know more about how your health data is visualized and its impact on your wellbeing.</p>
+  </header>
+
+  <!-- Complex p5.js Illustration -->
+  <div id="complexSketch"></div>
+
+  <section id="about-content">
+    <div class="card">
+      <h3>Why Track Stress Levels?</h3>
+      <p>Stress levels are a critical indicator of both mental and physical well-being. Consistent high stress can lead to burnout and a variety of health issues. By monitoring stress, you can make adjustments to your lifestyle, such as incorporating more rest or meditation, to lower stress and improve your overall health.</p>
+    </div>
+
+    <div class="card">
+      <h3>Why Track Sleep Levels?</h3>
+      <p>Sleep is the foundation of recovery and optimal performance. By tracking your sleep, you can ensure you are getting enough rest to restore your energy, boost cognitive function, and support muscle recovery. Tracking sleep patterns over time allows for adjustments to your schedule to improve your health.</p>
+    </div>
+
+    <div class="card">
+      <h3>Why Track Recovery Rate?</h3>
+      <p>Recovery is the key to understanding when your body is ready for more exertion or when it needs rest. A high recovery rate indicates that your body has successfully repaired itself, while a low recovery rate means you might need to take it easy. Monitoring recovery helps you avoid injury and burnout.</p>
+    </div>
+
+    <div class="card">
+      <h3>Why Track Heart Rate Variability (HRV)?</h3>
+      <p>Heart Rate Variability (HRV) is a measure of your autonomic nervous system and an important indicator of your overall health and fitness. A higher HRV suggests a more resilient body capable of handling stress, whereas lower HRV can indicate strain or fatigue. Tracking HRV can help in managing stress and optimizing performance.</p>
+    </div>
+
+    <div class="card">
+      <h3>Why Track Calories Burned?</h3>
+      <p>Tracking calories burned allows you to ensure that you are staying active enough to maintain or achieve your fitness goals. Whether you’re trying to lose weight, maintain weight, or simply stay active, monitoring calorie expenditure ensures you’re moving in the right direction.</p>
+    </div>
+
+    <div class="card">
+      <h3>Why Track Respiratory Rate?</h3>
+      <p>Respiratory rate can provide insight into your cardiovascular and pulmonary health. Changes in your respiratory rate can indicate illness, overtraining, or stress. Tracking this metric helps you maintain balance and ensure your lungs and heart are working efficiently.</p>
+    </div>
+
+    <div class="card">
+      <h3>Why Track Active Minutes?</h3>
+      <p>Active minutes provide a measure of how much moderate to intense physical activity you’re getting each day. Maintaining a high level of activity throughout the day can help reduce the risk of chronic diseases, improve cardiovascular health, and maintain overall fitness.</p>
+    </div>
+
+    <div class="card">
+      <h3>Why Track Hydration Levels?</h3>
+      <p>Staying hydrated is crucial for nearly every system in the body, including the heart, muscles, and brain. Tracking hydration levels ensures you are drinking enough water to maintain optimal body function, particularly during and after exercise.</p>
+    </div>
+
+    <div class="card">
+      <h3>Why Track Steps Count?</h3>
+      <p>Counting steps is a simple but effective way to measure daily physical activity. Walking regularly has a multitude of health benefits, including reducing the risk of heart disease, improving mood, and helping maintain a healthy weight. A higher step count often correlates with better overall health.</p>
+    </div>
+
+    <div class="card">
+      <h3>Why Track Body Temperature?</h3>
+      <p>Body temperature is an indicator of metabolic rate and can alert you to potential health issues, such as fever or overtraining. Tracking body temperature daily helps ensure your body is functioning normally, and deviations from the norm can prompt timely interventions.</p>
+    </div>
+
+    <div class="card">
+      <h3>Why Track Blood Oxygen Levels (SpO2)?</h3>
+      <p>Blood oxygen levels (SpO2) are a key measure of how well your lungs are delivering oxygen to your blood. Consistently high SpO2 levels indicate good lung function, while low levels can be a sign of respiratory issues or other underlying health conditions. Monitoring SpO2 is essential for overall cardiovascular and pulmonary health.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 WHOOP Data Insights</p>
+  </footer>
+
+  <script>
+    // Complex p5.js Visualization representing data flow and health metrics
+    new p5((p) => {
+      let particles = [];
+      let flowField = [];
+
+      p.setup = function () {
+        p.createCanvas(p.windowWidth, 500);
+        p.colorMode(p.HSB, 360, 100, 100);
+        p.background(0);
+        for (let i = 0; i < 300; i++) {
+          particles.push(new Particle());
+        }
+
+        for (let x = 0; x < p.width; x += 20) {
+          for (let y = 0; y < p.height; y += 20) {
+            let angle = p.noise(x * 0.01, y * 0.01) * p.TWO_PI;
+            flowField.push(p.createVector(p.cos(angle), p.sin(angle)));
+          }
+        }
+      };
+
+      p.draw = function () {
+        p.background(0, 0.1);
+        particles.forEach(particle => {
+          let x = p.floor(particle.pos.x / 20);
+          let y = p.floor(particle.pos.y / 20);
+          let index = x + y * p.floor(p.width / 20);
+          if (flowField[index]) {
+            particle.applyForce(flowField[index]);
+          }
+          particle.update();
+          particle.show();
+          particle.edges();
+        });
+      };
+
+      class Particle {
+        constructor() {
+          this.pos = p.createVector(p.random(p.width), p.random(p.height));
+          this.vel = p.createVector(0, 0);
+          this.acc = p.createVector(0, 0);
+          this.maxSpeed = 2;
+          this.hue = p.random(360);
+        }
+
+        applyForce(force) {
+          this.acc.add(force);
+        }
+
+        update() {
+          this.vel.add(this.acc);
+          this.vel.limit(this.maxSpeed);
+          this.pos.add(this.vel);
+          this.acc.mult(0);
+        }
+
+        show() {
+          p.stroke(this.hue, 80, 80, 0.8);
+          p.strokeWeight(2);
+          p.point(this.pos.x, this.pos.y);
+        }
+
+        edges() {
+          if (this.pos.x > p.width) this.pos.x = 0;
+          if (this.pos.x < 0) this.pos.x = p.width;
+          if (this.pos.y > p.height) this.pos.y = 0;
+          if (this.pos.y < 0) this.pos.y = p.height;
+        }
+      }
+    }, 'complexSketch');
+  </script>
+</body>
+</html>
